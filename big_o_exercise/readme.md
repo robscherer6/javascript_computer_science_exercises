@@ -4,11 +4,11 @@
 
 Simplify the following big O expressions as much as possible:
 
-1. `O(n + 10)`
-2. `O(100 * n)`
-3. `O(25)`
-4. `O(n^2 + n^3)`
-5. `O(n + n + n + n)`
+1. `O(n)`
+2. `O(n)`
+3. `O(1)`
+4. `O(n^5)`
+5. `O(n)`
 6. `O(1000 * log(n) + n)`
 7. `O(1000 * n * log(n) + n)`
 8. `O(2^n + n^2)`
@@ -29,7 +29,7 @@ function logUpTo(n) {
     }
 }
 
-// 2. 
+// 2.
 
 function logAtMost10(n) {
     for (var i = 1; i <= Math.min(n, 10); i++) {
@@ -37,7 +37,7 @@ function logAtMost10(n) {
     }
 }
 
-// 3. 
+// 3.
 
 function logAtLeast10(n) {
     for (var i = 1; i <= Math.max(n, 10); i++) {
@@ -57,7 +57,7 @@ function onlyElementsAtEvenIndex(array) {
     return newArray;
 }
 
-// 5. 
+// 5.
 
 function subtotals(array) {
     var subtotalArray = Array(array.length);
